@@ -11,6 +11,7 @@ use WHMCS\Module\Server\SolusIoVps\WhmcsAPI\Config;
 use WHMCS\Module\Server\SolusIoVps\WhmcsAPI\Product;
 use WHMCS\Module\Server\SolusIoVps\WhmcsAPI\Servers;
 use WHMCS\User\Client;
+use WHMCS\View\Menu\Item as MenuItem;
 
 function createAddHook() {
     return function (array $params) {
@@ -130,6 +131,17 @@ function createClientEditHook()
         }
     };
 }
+
+// add_hook('ClientAreaPrimarySidebar', 1, function(MenuItem $primarySidebar)
+// {
+//    if (!is_null($primarySidebar->getChild('Service Details Overview'))) {
+//             $primarySidebar->removeChild('Service Details Overview');
+//    }
+//    if (!is_null($primarySidebar->getChild('Service Details Actions'))) {
+//             $primarySidebar->removeChild('Service Details Actions');
+//    }    
+
+// });
 
 add_hook('AfterProductUpgrade', 1, createAddHook());
 add_hook('PreDeleteClient', 1, createPreDeleteClientHook());

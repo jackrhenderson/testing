@@ -36,7 +36,7 @@
 }
 </style>
 
-<script src="modules/servers/solusiovps/node_modules/chart.js/dist/Chart.js"></script> 
+<script src="modules/servers/solusiovps/node_modules/chart.js/dist/Chart.js"></script>
 <script type="text/javascript" src="modules/servers/solusiovps/node_modules/jsonform/deps/underscore.js"></script>
 <script type="text/javascript" src="modules/servers/solusiovps/node_modules/jsonform/deps/opt/jsv.js"></script>
 <script type="text/javascript" src="modules/servers/solusiovps/node_modules/jsonform/lib/jsonform.js"></script>
@@ -304,7 +304,6 @@
 </div>
 <br>
 {/if}
-
 
 
 <div class="media">
@@ -742,7 +741,6 @@ const reinstallServerConfirm = () => {
     if(applicationId > 0 && $(form).valid()) {
         form.serializeArray().map(field => applicationData[field.name] = field.value);
     }
-    
     
     if (osId == "15" || osId == "16"){
         {if $windowcheck eq true}

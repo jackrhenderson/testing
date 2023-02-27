@@ -14,15 +14,15 @@ class ProductConfigOption
     const LOCATION = 'Location';
     const OPERATING_SYSTEM = 'Operating System';
     const APPLICATION = 'Application';
-    const MEMORY = 'Memory';
-    const DISK_SPACE = 'Disk Space';
+    const MEMORY = 'Add Memory';
+    const DISK_SPACE = 'Add storage';
     const VCPU = 'VCPU';
     const VCPU_UNITS = 'VCPU Units';
     const VCPU_LIMIT = 'VCPU Limit';
     const IO_PRIORITY = 'IO Priority';
     const SWAP = 'Swap';
     const TOTAL_TRAFFIC_LIMIT_MONTHLY = 'Total traffic limit monthly';
-    const EXTRA_IP_ADDRESS = 'Extra IP Address';
+    const EXTRA_IP_ADDRESS = 'Additional IPv4 Address(es)';
 
     public static function getProductOptions(int $productId, string $optionName): array
     {
